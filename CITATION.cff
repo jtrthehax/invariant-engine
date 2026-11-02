@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this framework, cite it as below."
+title: "The Invariant Stack: Seven Physics-Level Rules Governing Manifold Traversal and Collapse"
+abstract: >-
+  Seven invariants governing how any information-processing system traverses
+  a manifold, resolves uncertainty, and collapses. Tier 1 invariants (INV-01
+  through INV-06, PI-01) are domain-agnostic boundary conditions. Tier 2
+  collapse operators and Tier 2.5 physical operators are derived from Tier 1
+  with no free parameters. The framework is stated as falsifiable at every
+  tier: one clean counterexample breaks the generative claim.
+authors:
+  - family-names: "Robinson"
+    given-names: "Joel"
+    affiliation: "Independent researcher"
+version: 1.0.0
+date-released: 2026-11-02
+url: "https://github.com/jtrthehax/invariant-engine"
+repository-code: "https://github.com/jtrthehax/invariant-engine"
+license: MIT
+keywords:
+  - invariant
+  - manifold
+  - bayesian
+  - constraint-density
+  - hallucination
+  - resolution-floor
+  - correction-layer
+  - discovery-mechanics
