@@ -326,19 +326,25 @@ The invariants predict all four. Not post-hoc. The mechanism is specified in adv
 
 The same seven rules appear independently across every domain. This is not the framework being applied — it is the framework being found.
 
-**In AI:**
-When an AI system solves a problem that human researchers call "alien science" — bypassing exponential barriers through geometric constraints, crossing domain silos that human vocabulary keeps separated, rewriting hardware abstractions to operate on substrate geometry directly — every case maps to the same rules. The ETH bypass is INV-01 + INV-02 (entry-point shift lowers the resolution floor). The cross-domain enzyme discovery is INV-04 (two addresses for the same manifold coordinate). The hardware-native compiler rewrite is INV-03 + INV-06 (eliminating abstraction layers to maximize input-side constraint density). The solutions look alien because human fields were navigating by consensus and incremental depth — only looking where past papers had shined a light. The negative space was never mapped.
+**In AI:**  
+When an AI system solves a problem that human researchers call "alien science" — bypassing exponential barriers through geometric constraints, crossing domain silos that human vocabulary keeps separated, rewriting hardware abstractions to operate on substrate geometry directly — every case maps to the same rules.  
+  
+The ETH bypass is INV-01 + INV-02 (entry-point shift lowers the resolution floor).  
+The cross-domain enzyme discovery is INV-04 (two addresses for the same manifold coordinate).  
+The hardware-native compiler rewrite is INV-03 + INV-06 (eliminating abstraction layers to maximize input-side constraint density).  
+  
+The solutions look alien because human fields were navigating by consensus and incremental depth — only looking where past papers had shined a light. The negative space was never mapped.
 
-**In physiology:**
+**In physiology:**  
 FND is INV-03 + INV-06: interoceptive Regime 3, both duality sides below threshold. Breath restores constraint density on the input side. The mechanism was always there — the field's measurement resolution was too high to see the upstream variable.
 
-**In language:**
+**In language:**  
 Hallucination in AI and misunderstanding in humans are the same phenomenon: INV-06 Regime 3. $H \propto \delta/D$. The distribution of hallucinations reveals the shape of the schema gap — not noise. INV-01 applies directly: what the field calls hallucination is structure below the field's current resolution floor.
 
-**In institutions:**
+**In institutions:**  
 INV-03 + INV-06 at scale. Load depletes the correction capacity. Vague mandate means low input-side constraint density. Regime 3 at institutional scale is what the field calls bureaucratic calcification, policy incoherence, or groupthink.
 
-**In discovery:**
+**In discovery:**  
 Every discovery — without exception — is INV-02: depth (going further along an existing path), width (adding adjacent structure), or entry-point shift (reframing the entry to the problem space so that previously invisible regions become the first things touched). There is no fourth operation.
 
 ---
@@ -434,7 +440,7 @@ The Manifold Schema derives the geometry. The Salience Interrupt derives the rou
 
 **Every variable in the framework maps to an invariant. Every prediction is derivable from a Tier-1 rule. Every confirmed result tightens a precision level. The floor drops. The mechanism becomes visible.**
 
-Full framework: <also fill me in later>
+Full Framework: [Manifold Schema](https://github.com/jtrthehax/manifold-schema/blob/main/README.md)
 Full invariant registry: <fill me in later>
 
 ---
