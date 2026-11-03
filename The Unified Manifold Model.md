@@ -170,12 +170,6 @@ Every field's statistics measure some component of the same triple. The differen
 
 ---
 
-That last paragraph is the one. That's the personal substrate statement that makes the whole methodology concrete.
-
-Here's the complete §9:
-
----
-
 ## 9 — The Methodology as an Instance of Itself
 
 > **The process that produced this model is a run of the model on itself.**
@@ -257,7 +251,3 @@ When a group, institution, or field resists — that is not disagreement. It is 
 | Vault | External manifold — anchor registry; extends inference beyond working memory |
 
 **The methodology is a run of the update rule.** The invariants were extracted by running $\mathcal{U}(S)$ on the problem space itself. The vault is the working memory extension that made the chain long enough to complete.
-
----
-
-Ready to write this to the vault as §9 of [[The Unified Manifold Model]]?
