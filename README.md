@@ -1,3 +1,6 @@
+> **⚡ Core Infrastructure Notice:** These invariants are compressed versions of the work I've compiled at my hub repo.  
+[Manifold Schema](https://github.com/jtrthehax/manifold-schema/) will contain the physiology broken down into different conceptual layers and physical layers of the stack that drive behavior starting from breath.
+
 # The Invariant Stack
 
 ### Seven physics-level rules that govern how any information-processing system traverses a manifold, resolves uncertainty, and collapses
