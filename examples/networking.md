@@ -203,6 +203,34 @@ Same method
 
 The layer structure is not a metaphor. It is the same structure across substrates. The engineer who holds the OSI stack simultaneously is holding the exact same move the framework requires. The training transfers because the structure is identical.
 
+## Case Study — The 802.11v Steering & Asymmetric Power Trap
+
+A vendor deploys a monitoring camera with a fixed high-power client radio. The network controller observes an uplink RSSI of -60 dBm and issues an 802.11v transition frame directing the client to move to AP Slot 2.
+
+
+```
+
+[ AP Controller ]  <--- Uplink: -60 dBm (High Client Power) ---  [ Medical Camera ]
+--- Downlink: -75 dBm (Slot 2 @ 0 dBm) --->  (Fixed High Tx)
+│
+802.11v Steering Frame
+│
+▼
+Trapped on Low-Signal Radio
+(Video Stream Drops)
+
+```
+
+### Invariant Breakdown
+* **INV-04 (Address Equals Routing):** The 802.11v steering frame acts as a mandatory address re-homing command. The client updates its routing coordinate to Slot 2.
+* **INV-05 (Asymmetric Prior):** The AP controller evaluates topology using only uplink telemetry, creating a false prior that the client-AP link is optimal.
+* **INV-06 (Constraint Duality & Amplitude Sink):** The client operates with "amplitude without precision"—cranking transmit wattage high while lacking the dynamic receiver rate-matching needed for low-power downlinks. It enters an amplitude sink ($\mathcal{A}_{sink}$) state: trapped on a poor radio, dumping power into a broken downlink channel.
+
+### Resolution & Root Cause
+The controller's steering algorithm is not fundamentally broken, but the vendor client's rigid, non-dynamic transmit power creates an unmapped asymmetry. The video stream drops not because of random RF noise, but because the system is operating across an uncoordinated power boundary.
+
+---
+
 ## Why Structural Learning Produces This
 
 > Every time you learn by building the invariant rather than memorizing the output, you are adding a cross-layer routing path to the manifold.
@@ -240,6 +268,15 @@ The response is structural, not defensive:
 
 4. **The transfer is a prediction, not a claim.** If the framework is correct — if the method is substrate-agnostic — then a network engineer applying the layer structure to a novel domain should produce findings a domain specialist misses. The framework predicts this. The domain specialist is welcome to falsify it. The prediction is structural, not personal.
 
+The scenario you are describing—a client pushing high transmit power so the AP sees a strong $-60\text{ dBm}$ uplink, while the AP's Slot 2 radio is throttled down to $0\text{ dBm}$ resulting in a abysmal $-75\text{ dBm}$ downlink—is a concrete real-world failure mode.
+
+In your invariant framework, this illustrates **Address Equals Routing (INV-04)** colliding with **Constraint Duality (INV-06)** and **Asymmetric Prior (INV-05)**:
+
+* **The Steering Misalignment:** The AP controller acts on an asymmetric metric (the uplink RSSI). It sends an 802.11v BSS Transition Management frame—an explicit forced re-homing command (INV-04)—recommending the client shift to Slot 2.
+* **Amplitude Without Precision:** The vendor's client device operates with a fixed, high-wattage transmit power ("cranked amplitude"). However, because its radio/antenna receiver design lacks high-sensitivity precision and dynamic rate matching, it acts as an **Amplitude Sink ($\mathcal{A}_{sink}$)**.
+* **The Trap:** The client obeys the 802.11v steering frame, lands on Slot 2, and immediately encounters a broken downlink signal ($-75\text{ dBm}$). Because of client-side roaming thresholds and stickiness, it gets locked into a persistent below-threshold loop. It can shriek out packets at full power, but it cannot cleanly decode the downlink, causing the medical camera stream to freeze or drop entirely.
+
+
 ## The Applied Statement
 
 The framework does not claim the author is credentialed in any domain. The framework claims the method is substrate-agnostic and that the substrate can be trained independently of the domain. Networking is a substrate that trains the method. The framework's derivation chain is the proof the training transferred. If the chain fails in any domain, the method failed in that domain, and the framework is wrong there. That is the claim, stated as a falsifiable one. If it is falsified, it is falsified. The credential does not survive the falsification either.
@@ -270,3 +307,4 @@ Does claim: the credential argument is answered by the
 - INV-03 — Bayesian Without PFC: the app team's logs were the correction signal, but nothing triggered the correction layer to use them
 - INV-06 — Constraint Density Duality: the DNS/DHCP timer coupling is the constraint density that made the mechanism work
 - OP-04 — Resolution Allocation: dropping layer-7 noise to free substrate for layer-3 depth
+
