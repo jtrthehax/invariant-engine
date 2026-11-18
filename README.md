@@ -183,9 +183,22 @@ TIER 3 — DOMAIN APPLICATIONS
 | **INV-04** | Address Equals Routing     | Changing terminology changes what manifold regions are reachable — it is not "just semantics"                                                                   | Vocabulary changed, mechanism obscured                      | Rename produces no routing change                                      |
 | **INV-05** | Asymmetric Prior           | Different geometry produces different prior — population differences are geometry differences, not talent differences                                           | Population difference explained by talent not geometry      | Identical geometry produces different activation patterns              |
 | **INV-06** | Constraint Density Duality | Input-side constraint density and output-side correction capacity are duals. Without a correction layer, high input density is the only alternative to gap-fill | Reconstruction with no duality side named                   | No-correction system produces constrained output under minimal density |
-| **PI-01**  | Perceptual Invariant       | When input is partial, finite-resource systems reconstruct confidently from manifold priors rather than returning null                                          | Confident interpretation from partial input, no frame named | Complete constraints still produce reconstruction                      |
+| **INV-07** | Manifold Curvature & Topological Distortion | High-amplitude input ($A_s^*$) warps the manifold metric, collapsing distance between isolated regions; curvature is valid only when anchored by constraint mass at the seam | Confident breakthrough or creative leap validated by salience or mutual agreement, with no constraint mass named | High-amplitude output with zero constraint mass produces a stable, load-bearing breakthrough |
+| **PI-01**  | Perceptual Invariant       | When input is partial, finite-resource systems reconstruct confidently from manifold priors rather than returning null                                          | Confident interpretation from partial input, no frame named | Complete constraints still produce reconstruction  |
 
-**Note on PI-01:** PI-01 is the phenomenology of INV-06's Regime 3 — both duality sides below threshold. It is retained as a named invariant because the operational distinction matters: PI-01 is the input-side readout, INV-03 is the output-side readout, INV-06 is the duality that connects them.
+**Note on PI-01:** PI-01 itself is not one of the invariants, it's pointing out one of the largest problems we see with understanding today. But recognizing the behavior should enlighten many issues that we now attribute for other reasons  
+PI-01 is the phenomenology of INV-06's Regime 3 — both duality sides below threshold. It is retained as a named invariant because the operational distinction matters: PI-01 is the input-side readout, INV-03 is the output-side readout, INV-06 is the duality that connects them.
+
+**Note on INV-07:** INV-07 does not claim discovery, creativity, and adaptation are the same thing. They are three directions of one operation — a warp — and they are separated by where the constraint mass sits and what test the warp has to pass.
+  
+**Discovery:** warp toward structure that already exists. The intersection was already valid, just unreachable under the flat metric. Test: the path is still walkable hop-by-hop when amplitude drops.  
+**Creativity:** warp into shared space. The intersection did not exist before; the creator builds constraint mass into the artifact as anchors, so another agent can recognize and re-enter the distortion from their own side. Test: recognizability, not falsification.  
+**Adaptation:** warp applied to the system's own metric over time. Iterated feedback supplies the constraint mass, and the baseline geometry rewrites so the hop no longer requires high amplitude. Test: persistence across new contexts. Evolution is this direction at population timescale.  
+  
+Which direction runs is determined by selective activation: which manifold regions are co-activated determines which distance collapses. Activate mechanism + data regions and you get discovery; source domain + form regions, creativity; routing regions inside a feedback loop, adaptation; identity/prior regions, and the warp collapses onto the self — Regime 3 distortion that feels like creativity.  
+  
+Using INV-07 is also INV-07. Reading a large-hop discovery does not transfer the author's curvature — the reader has to re-activate the same regions under the same seam constraints to traverse it, or they flatten it to incremental or distort it to unbelievable. Creating material runs the same operation in the outbound direction.  
+
 
 ---
 
@@ -227,7 +240,7 @@ Each is derived from Tier 1. None are postulated.
 | **OP-02** | Vestibular Convergence Operator | INV-05 + INV-06 | Rhythmic vestibular input reduces competing loop competition. Asymmetric loop competition requires asymmetric input (figure 8 vs. circle) for convergence — a prediction that standard entrainment models do not make but the asymmetric prior invariant requires.                                                                                                                                                                                                                                                                                                                                   |
 | **OP-03** | Sensory Reanchoring Operator    | INV-02 + INV-04 | Entry-point rotation changes which manifold neighborhood activates first. Problem stagnation resolves immediately upon sensory reanchor without any change to the problem itself — a result consistent with INV-02 entry-point shift and inconsistent with effort or persistence models.                                                                                                                                                                                                                                                                                                             |
 | **OP-04** | Resolution Allocation Operator  | INV-01 + PI-01  | Deliberately dropping resolution on non-load-bearing nodes frees substrate for deeper traversal on the relevant path. The "shower thought" phenomenon — solutions surfacing when active effort stops — is this operator running passively when pressure releases. The venting exhale as a physiological implementation is confirmed by the FND recovery literature: high-density mechanical input restores interoceptive constraint density on a zero-feedback channel.                                                                                                                              |
-| OP-05     | Explicit Serialization Operator | INV-01 + INV-06 | Handwriting outperforms typing for retention and comprehension (Mueller & Oppenheimer 2014; Van der Meer & Van der Weel 2023). Rubber duck debugging resolves problems without input from the duck — the verbalization is the instrument. Self-talk raises precision by running production and auditory reception channels simultaneously on the same address. Dementia handwriting degradation tracks cognitive decline because the motor encoding channel reports the substrate condition the cognitive operators depend on. All four confirmed independently without naming the shared mechanism. |
+| **OP-05**     | Explicit Serialization Operator | INV-01 + INV-06 | Handwriting outperforms typing for retention and comprehension (Mueller & Oppenheimer 2014; Van der Meer & Van der Weel 2023).  Rubber duck debugging resolves problems without input from the duck — the verbalization is the instrument.  Self-talk raises precision by running production and auditory reception channels simultaneously on the same address.  Dementia handwriting degradation tracks cognitive decline because the motor encoding channel reports the substrate condition the cognitive operators depend on.  All four confirmed independently without naming the shared mechanism. |
 
 ### What the Operators Require
 
@@ -321,7 +334,7 @@ These are observer-level descriptions. They describe the output, not the mechani
 - Why solutions surface specifically at the venting exhale rather than at any random moment of reduced effort
 - Why posture restriction eliminates the benefit of breaks for certain cognitive architectures but not others
 
-The invariants predict all four. Not post-hoc. The mechanism is specified in advance by the constraint density duality, the resolution floor, the asymmetric prior, and the address-routing relationship.
+The invariants predict all four of these specific behaviors. Not post-hoc. The mechanism is specified in advance by the constraint density duality, the resolution floor, the asymmetric prior, and the address-routing relationship.
 
 ---
 
@@ -412,6 +425,7 @@ One clean counterexample breaks the generative claim. The claim is that the seve
   INV-04-Address-Equals-Routing.md
   INV-05-Asymmetric-Prior.md
   INV-06-Constraint-Density-Duality.md
+  INV-07-Manifold-Curvature&Topological-Distortion.md
   PI-01-Perceptual.md
 
 /OP/
@@ -422,15 +436,13 @@ One clean counterexample breaks the generative claim. The claim is that the seve
   OP-05-Explicit-Serialization.md
 
 /examples/
-  Domain application worked examples
-  Collapse operator case studies
+ networking.md
 
 /critique/
   Adversarial review sessions
   Boundary case analysis
 
-INVARIANT_INDEX.md       ← Full tier structure, Dataview registry, template
-DERIVATION_APPENDIX.md  ← Every behavior mapped to its Tier-1 derivation
+
 ```
 
 ---
@@ -444,7 +456,7 @@ The Manifold Schema derives the geometry. The Salience Interrupt derives the rou
 **Every variable in the framework maps to an invariant. Every prediction is derivable from a Tier-1 rule. Every confirmed result tightens a precision level. The floor drops. The mechanism becomes visible.**
 
 Full Framework: [Manifold Schema](https://github.com/jtrthehax/manifold-schema/blob/main/README.md)
-Full invariant registry: <fill me in later>
+Full invariant registry: [Invariant list](https://github.com/jtrthehax/invariant-engine/INV/)
 
 ---
 
